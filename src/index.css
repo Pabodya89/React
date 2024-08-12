@@ -11,3 +11,56 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* src/index.css */
+body.light-mode {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+body.dark-mode {
+  --bg-color: #333333;
+  --text-color: #ffffff;
+}
+
+body {
+    background-image: url('../src/assets/books.jpg');
+    background-size: cover; /* Cover the entire page */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Make the background image fixed during scroll */
+    background-position: center; 
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container{
+  width: 100vw;
+  min-height: 100vh;
+  background-color:#fff;
+  transition: 0.5s;
+}
+
+.container.dark{
+  background: #222;
+}
+
+@media (max-width: 768px) {
+  body {
+      background-size: contain; /* Resize image to be fully visible */
+  }
+}
+
+/* For screens that are 480px wide or less (e.g., mobile phones) */
+@media (max-width: 480px) {
+  body {
+      background-size: contain; /* Resize image to be fully visible */
+  }
+}

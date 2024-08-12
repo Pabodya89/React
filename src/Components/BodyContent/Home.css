@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+
+.mainpicture{
+    width: 100%; 
+    height: 300px;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff; 
+    text-align: center;
+  }
+  
+.mainpicture-content {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+.name::placeholder {
+    color: #aaaaaa; 
+}
+  
+.name:focus {
+    border-color: #8e24aa; 
+}
+
+.details{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.details h2{
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #bbd60c;
+    text-shadow: 
+        2px 2px 0 #000, 
+       -2px 2px 0 #000, 
+       -2px -2px 0 #000, 
+        2px 0 0 #000,  
+       -2px 0 0 #000,    
+        0 2px 0 #000,    
+        0 -2px 0 #000;
+  
+}
+
+.details p {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+  color: #ffffff;
+  background-color: #007bff;
+  border-radius: 20px;
+}
+  
+.container {
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../../assets/books.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.books{
+  width: 100%;
+  height: 100%;
+}
+
+.name {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+ .mainpicture {
+  width: cover;
+  height: auto;
+  animation: fadeIn 2s ease-in-out, stayVisible 56s, fadeOut 2s ease-in-out 58s;
+} 
+
+.welcome-message {
+  font-size: 24px;
+  color: #000000;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes stayVisible {
+  from { opacity: 1; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+.details {
+  color: white;
+}
+
+.input-box {
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.enter-button {
+  padding: -5px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.enter-button:hover {
+  background-color: #45a049;
+}
